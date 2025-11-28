@@ -1,0 +1,106 @@
+.sidebar {
+  width: 240px;
+  flex-shrink: 0;
+  padding-right: var(--spacing-lg);
+}
+
+.customizable {
+  padding: var(--spacing-md) 0;
+  border-bottom: 1px solid var(--color-gray-200);
+  margin-bottom: var(--spacing-md);
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  cursor: pointer;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--color-gray-300);
+  cursor: pointer;
+}
+
+.checkboxText {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.filterSection {
+  border-bottom: 1px solid var(--color-gray-200);
+  padding: var(--spacing-md) 0;
+}
+
+.filterHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filterTitleGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.filterName {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.filterState {
+  font-size: 12px;
+  color: var(--color-gray-500);
+}
+
+.filterContent {
+  margin-top: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.unselectAll {
+  background: none;
+  border: none;
+  color: var(--color-gray-400);
+  font-size: 12px;
+  text-align: left;
+  padding: 0;
+  cursor: pointer;
+  margin-bottom: var(--spacing-xs);
+  text-decoration: underline;
+}
+
+.optionLabel {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  cursor: pointer;
+}
+
+.optionCheckbox {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.optionText {
+  font-size: 14px;
+  color: var(--color-black);
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    padding-right: 0;
+  }
+}

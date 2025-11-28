@@ -1,0 +1,63 @@
+.pageWrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  text-align: center;
+  padding: var(--spacing-xxl) 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-size: 48px;
+  font-weight: 400;
+  /* Often lighter in these designs */
+  margin-bottom: var(--spacing-md);
+  letter-spacing: 1px;
+}
+
+.heroText {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-black);
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* 4 columns on desktop */
+  gap: var(--spacing-xl) var(--spacing-md);
+  margin-bottom: var(--spacing-xxl);
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+  .productGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .productGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .heroTitle {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .productGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md) var(--spacing-sm);
+    /* Smaller gap on mobile */
+  }
+
+  .hero {
+    padding: var(--spacing-md) 0;
+  }
+}
