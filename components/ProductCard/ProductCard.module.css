@@ -17,7 +17,7 @@
 }
 
 .image {
-  object-fit: fill;
+  object-fit: cover;
   /* padding: var(--spacing-sm); */
   transition: transform 0.3s ease;
 }
